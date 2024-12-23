@@ -1,6 +1,6 @@
-# NoteEval2 Crew
+# NoteEvaluation Crew
 
-Welcome to the NoteEval2 Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to the NoteEvaluation Crew project. This project helps analyze and enhance your study notes using AI agents that collaborate to provide comprehensive understanding and learning recommendations.
 
 ## Installation
 
@@ -20,35 +20,47 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Required Configuration:**
+Add the following environment variables to your `.env` file:
+1. `OPENAI_API_KEY` - Your OpenAI API key
+2. `SERPER_API_KEY` - Your Serper API key for web searches
+3. `MODEL` - The OpenAI model to use (e.g., gpt-4)
 
-- Modify `src/note_eval2/config/agents.yaml` to define your agents
-- Modify `src/note_eval2/config/tasks.yaml` to define your tasks
-- Modify `src/note_eval2/crew.py` to add your own logic, tools and specific args
-- Modify `src/note_eval2/main.py` to add custom inputs for your agents and tasks
+**Optional Customizations:**
+- **Agent Configuration** (`src/note_eval2/config/agents.yaml`):
+  - Modify existing agents (note_summarizer, note_complementer, learning_advisor)
+  - Add new agents with specialized roles
+  - Configure agent parameters like temperature, model, and tools
+
+- **Task Configuration** (`src/note_eval2/config/tasks.yaml`):
+  - Customize existing task descriptions and goals
+  - Define new tasks for additional analysis
+  - Adjust task dependencies and output requirements
+
+- **Code Customization:**
+  - `src/note_eval2/crew.py`: Extend agent capabilities, add custom tools, or modify the workflow
+  - `src/note_eval2/main.py`: Configure input handling and execution flow
+
+All configurations can be adjusted to better suit your specific note analysis needs and preferences.
 
 ## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+To analyze your notes, place your note file as `note.txt` in the root folder and run:
 
 ```bash
 $ crewai run
 ```
 
-This command initializes the note_eval2 Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+This will generate three output files:
+- `note_summary_output.md`: A concise summary of your notes
+- `note_complement_output.md`: Additional context and information related to your notes
+- `learning_advice_output.md`: Personalized recommendations for further study
 
 ## Understanding Your Crew
 
-The note_eval2 Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+The note_eval2 Crew consists of three specialized agents:
+- **Note Summarizer**: Analyzes and creates concise summaries of your notes
+- **Note Complementer**: Enriches your notes with additional relevant information
+- **Learning Advisor**: Provides personalized learning recommendations
 
-## Support
-
-For support, questions, or feedback regarding the NoteEval2 Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+These agents work together using the tasks defined in `config/tasks.yaml`, and their capabilities are configured in `config/agents.yaml`.
