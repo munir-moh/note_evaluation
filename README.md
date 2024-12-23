@@ -18,7 +18,7 @@ Next, navigate to your project directory and install the dependencies:
 ```bash
 crewai install
 ```
-### Customizing
+### Customization
 
 **Required Configuration:**
 Add the following environment variables to your `.env` file:
