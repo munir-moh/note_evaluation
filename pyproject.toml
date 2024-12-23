@@ -1,0 +1,20 @@
+[project]
+name = "note_eval2"
+version = "0.1.0"
+description = "note_eval2 using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+note_eval2 = "note_eval2.main:run"
+run_crew = "note_eval2.main:run"
+train = "note_eval2.main:train"
+replay = "note_eval2.main:replay"
+test = "note_eval2.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

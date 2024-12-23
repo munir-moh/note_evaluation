@@ -1,0 +1,20 @@
+note_summary_task:
+  description: >
+    Read the content of note.txt and summarize it in few sentences
+  expected_output: >
+    A concise summary capturing the essence of the note.
+  agent: note_summarizer
+
+note_complement_task:
+  description: >
+    Complement the summary with additional information you find on the web.
+  expected_output: >
+    An enhanced note with additional insights and data from reliable sources.
+  agent: note_complementer
+
+learning_advice_task:
+  description: >
+    Advise on what to learn next based on the summary and the online complement.
+  expected_output: >
+    A 7 bullets points list recommending the next steps and resources for further learning.
+  agent: learning_advisor

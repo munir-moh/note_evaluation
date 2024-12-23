@@ -1,0 +1,36 @@
+                                Design and Software Process
+This chapter focuses on addressing the concepts of interaction design (Usability from the user perspective) through the study of design principles, processes, design rules, and evaluation techniques. Moreover, the chapter briefly discusses software processes in human computer interaction.
+Design
+
+It simply refers to achieving goals within constraints. Though the definition doesn't cover all aspect of design, but it enable us understand, goals and constraint. By goals, we simply mean what is the purpose of what we are intending to produce? For who? For what reason do they want it? For instance, consider a case where you want to design a new technology targeting youths that will ease their social activities. By constraint, we referred to what materials will be use? What standard are we adopting? What amount will it cost? What challenges does it in-cure? And many more concerns. Considering our earlier example of designing a new technology, some constraints includes; does it withstand long-hours usage? What relevant laws and policies should we incorporate? Etc.
+However, sometimes it is quite difficult to achieve all our goals within the constraints, and in design, there are trade-offs, which involves selecting which goals to achieve or which constraint are we relaxing. The best design is one which the designer understood the trade-offs and what contributed them, and accepting them is one of the key skill needed in design.
+
+The Golden rules of design
+Our designs may be different with others, but are likely from the same raw materials. Hence, the golden rules of design is the understanding of your materials. But for HCI, the raw materials are the Humans and the computer:
+1. Understand Humans - psychological, social, and human error
+2. Understand computers - limitations, capacities, tools, platforms.
+However, since the focus of the technology to be built is for the user and one of the key goals of HCI, being usability, consideration of usability must be factored at the early stage of design. Hence, design is a process.
+
+The process of Design
+Design is an iterative activity and involve some processes as shown in the figure below. The processes are:
+1. Requirement: This stage explore what is needed from the technology. This is achieved through a number of ways. However, key to this exploration of what is needed is the understanding of what is in existence and how users work or operate the existing technology. This can be gathered through the process of observation, ethnography, interview, focus group, documents verification, etc.
+2. Analysis: The result of process exploration obtained through observation or interview is then ordered and organized that leads to the identification of key issues that need to be focus on, which are later communicated to other stages. The observed interactions are usually captured in form of scenarios or rich stories of interaction. Scenarios refers to stories of design and are used to represent design, communicate with others, and validate models.
+3. Design: Simply refers to translating what you want, to how to do it based on some rules, guidelines, and principles.
+
+
+
+Software Process in HCI
+The software engineering process, specifically, software development life-cycle provides a medium for understanding the structure of the design process, which can be assess for its effectiveness in interaction design process. The life-cycle identify activities that occur in the development of a software. These activities are represented with the aid of a model called waterfall model as shown in Figure 2.5. The processes are:
+1. Requirement Specification: This is the first stage of software/product development which vividly describe what the system is expected to provide. Moreover, it entails listing of information from the customer about the environment, the users of the software, the domain, and the relationship between the new software/product with the existing product,
+and the potential impact, if any. These information listed are usually stated in a natural or native language which are ambiguous and far different from the language of the executable programs. Hence, a key to successful development is the transformation of natural/native ambiguous to expressive executable language.
+2. Architectural design: The earlier stage concentrates on what the system will do. This phase concentrates on how the system provides the expected services by decomposing the high-level representation of the system into components which can either be develop independently from scratch or integrated from existing systems. Also, it involves describing the inter-dependencies between components and the resources shared towards achieving the targeted goal. A number of techniques are used to assist in eliciting architectural designs such as CORE, MASCOT, HOOD, etc which further highlights functional and non-functional requirements.
+3. Detailed Design: The previous stage provides decomposition of what is needed from the system. It also identify those components that needs to be integrated from the existing system. Those components that needs to be developed independently from the scratch, this phase must provide sufficient details of implementation so that they may be developed in some language.
+4. Coding and unit testing: The details of the component to be design should be in a form that can be implemented in some programming or executable language. The developed component is then tested and verify based on some criteria to assess it functionality and effectiveness.
+5. Integration and testing: Once the components have been developed, they are now integrated into a single entity and tested to ensure the satisfaction of the requirements
+earlier stated. Moreover, acceptance testing is also conducted with the user to further ensure that the software/product meets the requirements, and is only then that the software/product is release to the customer.
+6. Maintenance: It involves the corrections of errors after the software/product is release. All work carried-out after the release of software/product is considered as maintenance. Moreover, it serves as medium for obtaining feedback from the release software/product. However, part of the software life-cycle also entails the validation and verification to ensure full satisfaction of customer requirements. As noted by scholars, validation involves designing the
+"right thing" and verification entails designing "the thing right".
+
+Moreover, the software life-cycle presented depicts the process of design in a pipeline (sequential) approach, whereas the actual design process is iterative in nature as earlier discussed. A key point to note is that the presented software life-cycle model doesn't promote the use of notations and techniques that support the user's perspective of the interactive system.
+Reflections!
+? Compare and contrast the design process with software design process towards effective and efficient technology.
