@@ -24,7 +24,7 @@ crewai install
 Add the following environment variables to your `.env` file:
 1. `OPENAI_API_KEY` - Your OpenAI API key
 2. `SERPER_API_KEY` - Your Serper API key for web searches
-3. `MODEL` - The OpenAI model to use (e.g., gpt-4o)
+3. `MODEL` - The OpenAI model to use (e.g., o1-mini)
 
 **Optional Customizations:**
 - **Agent Configuration** (`src/note_eval2/config/agents.yaml`):
